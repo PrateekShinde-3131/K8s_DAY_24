@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: "2024-09-28T06:47:26Z"
+  name: node-reader
+  resourceVersion: "80099"
+  uid: 55010eb3-558a-4490-994b-d9d27f8fffc5
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - nodes
+  verbs:
+  - list
+  - get
+  - watch

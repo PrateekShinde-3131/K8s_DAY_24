@@ -1,0 +1,15 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  creationTimestamp: "2024-09-28T06:52:09Z"
+  name: reader-binding
+  resourceVersion: "80510"
+  uid: e85b2835-6e24-4a29-a036-27940c53dd22
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: node-reader
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: User
+  name: learner
